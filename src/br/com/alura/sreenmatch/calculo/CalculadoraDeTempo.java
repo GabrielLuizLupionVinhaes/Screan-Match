@@ -1,0 +1,18 @@
+package br.com.alura.sreenmatch.calculo;
+
+import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.screenmatch.modelos.Titulo;
+
+public class CalculadoraDeTempo {
+    private int tempoTotal;
+
+    public int getTempoTotal() {
+        return tempoTotal;
+    }
+
+    public void inclui(Titulo t){
+        tempoTotal += t.getDuracao();
+    }
+
+}
